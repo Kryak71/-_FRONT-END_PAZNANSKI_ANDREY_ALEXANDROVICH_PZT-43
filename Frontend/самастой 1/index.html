@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, контрольная, увлечения, таблица, форма">
+    <title>Познанский Андрей Александрович</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            margin: 20px;
+            padding: 20px;
+            background-image: url('верона.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            color: #000;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h6 {
+            font-size: 1.5em;
+            text-align: right;
+            margin: 0 0 10px 0;
+            padding: 5px;
+        }
+        .group {
+            font-weight: bold;
+            color: red;
+        }
+        .course {
+            text-align: right;
+            font-style: italic;
+        }
+        .hobby {
+            text-align: center;
+            text-decoration: line-through;
+            margin-top: 20px;
+            font-size: 12pt;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .form-container {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 450px;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .form-container h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .center-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .center-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        #fio-anchor {
+            scroll-margin-top: 20px;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        .roman-list {
+            list-style-type: upper-roman;
+            margin-left: 40px;
+        }
+        .image-link {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .image-link a img {
+            width: 150px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <a id="fio-anchor"></a>
+    
+    <h6>Познанский Андрей Александрович</h6>
+    <p><span class="group">Группа: ПЗТ-43</span></p>
+    <p class="course">Курс: 3-й курс</p>
+    <p class="hobby">Мои увлечения: спорт, деньги, работа</p>
+    
+    <h3>Список по заданию №3:</h3>
+    <ol class="roman-list" start = "10">
+        <li>Зима</li>
+        <li>Весна</li>
+        <li>Лето</li>
+    </ol>
+    
+    <div class="center-image">
+        <img src="красавчик.jpg" alt="Произвольное изображение 300x300" width="300" height="300">
+    </div>
+    
+    <div class="image-link">
+        <a href="page2.html" target="_blank">
+            <img src="детка.jpg" alt="Ссылка в виде картинки" width="150" height="100">
+        </a>
+        <p><em>Нажмите на картинку, чтобы перейти на другую страницу</em></p>
+    </div>
+    
+    <p><a href="#fio-anchor">🔗 Перейти к тексту ФИО</a></p>
+    
+    <h3 style="text-align:center;">Таблица браузеров</h3>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; margin: 20px auto; width: 80%; font-family: 'Times New Roman', serif; font-size: 12pt;">
+        <tr>
+            <th>Браузер</th>
+            <th>Internet Explorer</th>
+            <th>Opera</th>
+            <th>Firefox</th>
+        </tr>
+        <tr>
+            <td>Поддерживается</td>
+            <td>Нет</td>
+            <td>Да</td>
+            <td>Да</td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td>7.0</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>9.0</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>2.0</td>
+        </tr>
+    </table>
+    
+    <div class="form-container">
+        <h3>Форма заказа обратного звонка</h3>
+        <form action="#" method="post" onreset="return confirm('Очистить форму?')">
+            <div class="form-group">
+                <label>Телефон:</label>
+                <input type="text" name="phone" value="+7(800)000-00-00" style="width: 100%; padding: 8px; box-sizing: border-box; font-family: 'Times New Roman', serif; font-size: 12pt;">
+            </div>
+            
+            <div class="form-group">
+                <label>Адресовать заявку:</label>
+                <div>
+                    <label><input type="checkbox" name="service" value="internet_magazin"> Интернет-магазин</label><br>
+                    <label><input type="checkbox" name="service" value="assembly"> Сборка</label><br>
+                    <label><input type="checkbox" name="service" value="warranty"> Гарантийный отдел</label><br>
+                    <label><input type="checkbox" name="service" value="delivery"> Доставка</label><br>
+                    <label><input type="checkbox" name="personal_data"> Я согласен на обработку персональных данных</label>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px; display: flex; gap: 15px; justify-content: center;">
+                <button type="reset" style="padding: 8px 20px; font-size: 12pt; font-family: 'Times New Roman', serif; background-color: #f0f0f0; border: 1px solid #ccc; cursor: pointer;">Очистить</button>
+                <button type="submit" style="padding: 8px 20px; font-size: 12pt; font-family: 'Times New Roman', serif; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Отправить</button>
+            </div>
+        </form>
+    </div>
+    
+    <hr>
+</div>
+</body>
+</html>
